@@ -1,0 +1,41 @@
+{
+    "parent": "spartanweaponry:item/heavy_crossbow_wood",
+    "textures": {
+        "layer0": "spartansimpleores:items/crossbow_mythril_standby"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "pulling": 1
+            },
+            "model": "spartansimpleores:item/heavy_crossbow_mythril_pulling_0"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.65
+            },
+            "model": "spartansimpleores:item/heavy_crossbow_mythril_pulling_1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "spartansimpleores:item/heavy_crossbow_mythril_pulling_2"
+        },
+        {
+            "predicate": {
+                "charged": 1
+            },
+            "model": "spartansimpleores:item/heavy_crossbow_mythril_loaded"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "charged": 1
+            },
+            "model": "spartansimpleores:item/heavy_crossbow_mythril_firing"
+        }
+    ]
+}
