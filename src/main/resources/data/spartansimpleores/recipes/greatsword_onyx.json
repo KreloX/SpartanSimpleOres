@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:greatsword",
+  "pattern": [
+    " m ",
+	"mmm",
+	"mhm"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:gems/onyx"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:greatsword_onyx"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "greatsword"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

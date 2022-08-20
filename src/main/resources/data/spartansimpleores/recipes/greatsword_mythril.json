@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:greatsword",
+  "pattern": [
+    " m ",
+	"mmm",
+	"mhm"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/mithril"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+	}
+  },
+  "result": {
+    "item": "spartansimpleores:greatsword_mythril"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "greatsword"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

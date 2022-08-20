@@ -1,0 +1,28 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:spear",
+  "pattern": [
+    "m",
+	"p"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:gems/onyx"
+    },
+    "p": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:spear_onyx"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "spear"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:warhammer",
+  "pattern": [
+    " m",
+	"mm",
+	" h"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/mithril"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+	}
+  },
+  "result": {
+    "item": "spartansimpleores:warhammer_mythril"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "warhammer"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

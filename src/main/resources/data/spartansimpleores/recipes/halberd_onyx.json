@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:halberd",
+  "pattern": [
+    " m",
+	"mm",
+	"mh"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:gems/onyx"
+    },
+    "h": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:halberd_onyx"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "halberd"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

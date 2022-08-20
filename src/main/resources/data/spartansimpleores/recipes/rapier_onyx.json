@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:rapier",
+  "pattern": [
+    "  m",
+	"mm ",
+	"hm "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:gems/onyx"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:rapier_onyx"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "rapier"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

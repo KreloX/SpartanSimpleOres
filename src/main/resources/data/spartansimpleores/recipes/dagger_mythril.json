@@ -1,0 +1,28 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:dagger",
+  "pattern": [
+    "m",
+	"s"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/mithril"
+    },
+	"s": {
+      "item": "spartanweaponry:handle"
+	}
+  },
+  "result": {
+    "item": "spartansimpleores:dagger_mythril"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "dagger"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

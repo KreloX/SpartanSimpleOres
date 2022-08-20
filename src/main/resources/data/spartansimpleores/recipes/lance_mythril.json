@@ -1,0 +1,32 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:lance",
+  "pattern": [
+    "  m",
+	"mp ",
+	"hm "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/mithril"
+    },
+    "p": {
+      "item": "spartanweaponry:pole"
+	},
+  	"h": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:lance_mythril"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "lance"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:glaive",
+  "pattern": [
+    "m",
+	"m",
+	"h"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:gems/onyx"
+    },
+    "h": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:glaive_onyx"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "glaive"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

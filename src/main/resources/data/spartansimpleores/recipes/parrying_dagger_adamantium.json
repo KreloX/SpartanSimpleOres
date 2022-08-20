@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:parrying_dagger",
+  "pattern": [
+    " #",
+    "#|"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/adamantium"
+    },
+    "|": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:parrying_dagger_adamantium"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "parrying_dagger"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

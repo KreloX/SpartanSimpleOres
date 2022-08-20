@@ -1,0 +1,32 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:battleaxe",
+  "pattern": [
+    "mmm",
+	"msm",
+	" h "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:gems/onyx"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    },
+	"s": {
+      "tag": "forge:rods/wooden"
+	}
+  },
+  "result": {
+    "item": "spartansimpleores:battleaxe_onyx"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "battleaxe"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

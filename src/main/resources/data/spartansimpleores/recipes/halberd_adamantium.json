@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:halberd",
+  "pattern": [
+    " m",
+	"mm",
+	"mh"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/adamantium"
+    },
+    "h": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:halberd_adamantium"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "halberd"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}
