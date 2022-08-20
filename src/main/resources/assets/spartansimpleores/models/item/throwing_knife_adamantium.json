@@ -1,0 +1,9 @@
+{"textures": {"layer0": "spartansimpleores:items/throwing_knife_adamantium"}, "parent": "spartanweaponry:item/throwing_knife_wood",
+    "overrides": [
+        {
+            "predicate": {
+                "throwing": 1
+            },
+            "model": "spartansimpleores:item/throwing_knife_adamantium_throwing"
+        }
+    ]}

@@ -1,0 +1,9 @@
+{"textures": {"layer0": "spartansimpleores:items/throwing_axe_onyx"}, "parent": "spartanweaponry:item/tomahawk_wood",
+    "overrides": [
+        {
+            "predicate": {
+                "throwing": 1
+            },
+            "model": "spartansimpleores:item/tomahawk_onyx_throwing"
+        }
+    ]}
