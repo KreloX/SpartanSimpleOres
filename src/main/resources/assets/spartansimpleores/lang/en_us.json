@@ -1,0 +1,128 @@
+{
+	// Weapons
+	
+		// Daggers
+		"item.spartansimpleores.dagger_mythril": "Mythril Dagger",
+		"item.spartansimpleores.dagger_adamantium": "Adamantium Dagger",
+		"item.spartansimpleores.dagger_onyx": "Onyx Dagger",
+		
+		// Longsword
+		"item.spartansimpleores.longsword_mythril": "Mythril Longsword",
+		"item.spartansimpleores.longsword_adamantium": "Adamantium Longsword",
+		"item.spartansimpleores.longsword_onyx": "Onyx Longsword",
+		
+		// Battleaxes
+		"item.spartansimpleores.battleaxe_mythril": "Mythril Battleaxe",
+		"item.spartansimpleores.battleaxe_adamantium": "Adamantium Battleaxe",
+		"item.spartansimpleores.battleaxe_onyx": "Onyx Battleaxe",
+		
+		// Maces
+		"item.spartansimpleores.flanged_mace_mythril": "Mythril Flanged Mace",
+		"item.spartansimpleores.flanged_mace_adamantium": "Adamantium Flanged Mace",
+		"item.spartansimpleores.flanged_mace_onyx": "Onyx Flanged Mace",
+		
+		// Glaives
+		"item.spartansimpleores.glaive_mythril": "Mythril Glaive",
+		"item.spartansimpleores.glaive_adamantium": "Adamantium Glaive",
+		"item.spartansimpleores.glaive_onyx": "Onyx Glaive",
+		
+		// Halberds
+		"item.spartansimpleores.halberd_mythril": "Mythril Halberd",
+		"item.spartansimpleores.halberd_adamantium": "Adamantium Halberd",
+		"item.spartansimpleores.halberd_onyx": "Onyx Halberd",
+		
+		// Battle Hammers
+		"item.spartansimpleores.hammer_mythril": "Mythril Battle hammer",
+		"item.spartansimpleores.hammer_adamantium": "Adamantium Battle hammer",
+		"item.spartansimpleores.hammer_onyx": "Onyx Battle hammer",
+		
+		// Longbows
+		"item.spartansimpleores.longbow_mythril": "Mythril-Strengthened Longbow",
+		"item.spartansimpleores.longbow_adamantium": "Adamantium-Strengthened Longbow",
+		"item.spartansimpleores.longbow_onyx": "Onyx-Strengthened Longbow",
+		
+		// Lances
+		"item.spartansimpleores.lance_mythril": "Mythril Lance",
+		"item.spartansimpleores.lance_adamantium": "Adamantium Lance",
+		"item.spartansimpleores.lance_onyx": "Onyx Lance",
+		
+		// Pikes
+		"item.spartansimpleores.pike_mythril": "Mythril Pike",
+		"item.spartansimpleores.pike_adamantium": "Adamantium Pike",
+		"item.spartansimpleores.pike_onyx": "Onyx Pike",
+		
+		// Quarterstaffs
+		"item.spartansimpleores.quarterstaff_mythril": "Mythril Quarterstaff",
+		"item.spartansimpleores.quarterstaff_adamantium": "Adamantium Quarterstaff",
+		"item.spartansimpleores.quarterstaff_onyx": "Onyx Quarterstaff",
+		
+		// Rapiers
+		"item.spartansimpleores.rapier_mythril": "Mythril Rapier",
+		"item.spartansimpleores.rapier_adamantium": "Adamantium Rapier",
+		"item.spartansimpleores.rapier_onyx": "Onyx Rapier",
+		
+		// Sabers
+		"item.spartansimpleores.saber_mythril": "Mythril Saber",
+		"item.spartansimpleores.saber_adamantium": "Adamantium Saber",
+		"item.spartansimpleores.saber_onyx": "Onyx Saber",
+		
+		// Spears
+		"item.spartansimpleores.spear_mythril": "Mythril Spear",
+		"item.spartansimpleores.spear_adamantium": "Adamantium Spear",
+		"item.spartansimpleores.spear_onyx": "Onyx Spear",
+		
+		// Warhammers
+		"item.spartansimpleores.warhammer_mythril": "Mythril Warhammer",
+		"item.spartansimpleores.warhammer_adamantium": "Adamantium Warhammer",
+		"item.spartansimpleores.warhammer_onyx": "Onyx Warhammer",
+		
+		// Katanas
+		"item.spartansimpleores.katana_mythril": "Mythril Katana",
+		"item.spartansimpleores.katana_adamantium": "Adamantium Katana",
+		"item.spartansimpleores.katana_onyx": "Onyx Katana",
+		
+		// Greatswords
+		"item.spartansimpleores.greatsword_mythril": "Mythril Greatsword",
+		"item.spartansimpleores.greatsword_adamantium": "Adamantium Greatsword",
+		"item.spartansimpleores.greatsword_onyx": "Onyx Greatsword",
+		
+		// Boomerangs
+		"item.spartansimpleores.boomerang_mythril": "Mythril Boomerang",
+		"item.spartansimpleores.boomerang_adamantium": "Adamantium Boomerang",
+		"item.spartansimpleores.boomerang_onyx": "Onyx Boomerang",
+		
+		// Crossbows
+		"item.spartansimpleores.heavy_crossbow_mythril": "Mythril-Strengthened Heavy Crossbow",
+		"item.spartansimpleores.heavy_crossbow_adamantium": "Adamantium-Strengthened Heavy Crossbow",
+		"item.spartansimpleores.heavy_crossbow_onyx": "Onyx-Strengthened Heavy Crossbow",
+		
+		// Javelins
+		"item.spartansimpleores.javelin_mythril": "Mythril Javelin",
+		"item.spartansimpleores.javelin_adamantium": "Adamantium Javelin",
+		"item.spartansimpleores.javelin_onyx": "Onyx Javelin",
+		
+		// Throwing Knives
+		"item.spartansimpleores.throwing_knife_mythril": "Mythril Throwing Knife",
+		"item.spartansimpleores.throwing_knife_adamantium": "Adamantium Throwing Knife",
+		"item.spartansimpleores.throwing_knife_onyx": "Onyx Throwing Knife",
+		
+		// Tomahawks
+		"item.spartansimpleores.tomahawk_mythril": "Mythril Tomahawk",
+		"item.spartansimpleores.tomahawk_adamantium": "Adamantium Tomahawk",
+		"item.spartansimpleores.tomahawk_onyx": "Onyx Tomahawk",
+		
+		// Parrying Daggers
+		"item.spartansimpleores.parrying_dagger_mythril": "Mythril Parrying Dagger",
+		"item.spartansimpleores.parrying_dagger_adamantium": "Adamantium Parrying Dagger",
+		"item.spartansimpleores.parrying_dagger_onyx": "Onyx Parrying Dagger",
+		
+		// Scythes
+		"item.spartansimpleores.scythe_mythril": "Mythril Scythe",
+		"item.spartansimpleores.scythe_adamantium": "Adamantium Scythe",
+		"item.spartansimpleores.scythe_onyx": "Onyx Scythe",
+		
+	// Tabs
+		
+		// SWSO
+		"itemGroup.sw_simpleores": "Spartan Weaponry: SimpleOres"
+}
