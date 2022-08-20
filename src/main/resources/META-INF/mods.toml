@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+issueTrackerURL="https://github.com/KreloX/SpartanSimpleOres/issues"
+license="GPL-3.0"
+[[mods]] #mandatory
+modId="spartansimpleores"
+version="1.16.5-1.0.0"
+displayName="Spartan Weaponry: SimpleOres"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-simpleores"
+logoFile="logo.png"
+credits="Most textures originate in the Spartan Compatibility mod for 1.12.2"
+authors="KreloX"
+description='''
+
+Adding SimpleOres themed weapons to Spartan Weaponry.
+
+'''
+[[dependencies.spartansimpleores]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.spartansimpleores]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.spartansimpleores]]
+    modId="simpleores"
+    mandatory=true
+    versionRange="[1.16.5-2.4.7.2,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.spartansimpleores]]
+    modId="spartanweaponry"
+    mandatory=true
+    versionRange="[2.2.0,)"
+    ordering="NONE"
+    side="BOTH"
