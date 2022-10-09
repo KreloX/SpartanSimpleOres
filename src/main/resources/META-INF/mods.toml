@@ -4,7 +4,7 @@ issueTrackerURL="https://github.com/KreloX/SpartanSimpleOres/issues"
 license="GPL-3.0"
 [[mods]] #mandatory
 modId="spartansimpleores"
-version="1.16.5-1.1.0"
+version="1.16.5-1.0.2"
 displayName="Spartan Weaponry: SimpleOres"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-simpleores"
 logoFile="logo.png"
@@ -25,6 +25,12 @@ Adding SimpleOres themed weapons to Spartan Weaponry.
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.spartansimpleores]]
+    modId="simpleores"
+    mandatory=true
+    versionRange="[1.16.5-2.4.7.2,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.spartansimpleores]]
