@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:saber",
+  "pattern": [
+    " #",
+    " #",
+    "#|"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/adamantium"
+    },
+    "|": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "item": "spartansimpleores:adamantium_saber"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "saber"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

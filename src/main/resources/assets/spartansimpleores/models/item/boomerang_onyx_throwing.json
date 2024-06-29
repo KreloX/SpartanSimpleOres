@@ -1,6 +1,0 @@
-{
-    "parent": "spartanweaponry:item/boomerang_wood_throwing",
-    "textures": {
-        "layer0": "spartansimpleores:items/boomerang_onyx"
-    }
-}
