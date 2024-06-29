@@ -8,7 +8,6 @@ import mod.alexndr.simplecorelib.api.helpers.TagUtils;
 import mod.alexndr.simpleores.content.SimpleOresTiers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,8 +20,8 @@ import java.util.Set;
 public class SpartanSimpleOres extends SpartanAddon {
     public static final String MODID = "spartansimpleores";
 
-    public static final DeferredRegister<Item> ITEMS = itemRegister(MODID);
     public static final WeaponMap WEAPONS = new WeaponMap();
+    public static final DeferredRegister<Item> ITEMS = itemRegister(MODID);
 
     public static final SpartanMaterial MYTHRIL = new SpartanMaterial("mythril", MODID, SimpleOresTiers.MYTHRIL, TagUtils.forgeTag("ingots/mythril"), Set.of(), Map.of());
     public static final SpartanMaterial ADAMANTIUM = new SpartanMaterial("adamantium", MODID, SimpleOresTiers.ADAMANTIUM, TagUtils.forgeTag("ingots/adamantium"), Set.of(), Map.of());
@@ -35,8 +34,6 @@ public class SpartanSimpleOres extends SpartanAddon {
 
         registerSpartanWeapons(ITEMS);
         ITEMS.register(bus);
-
-        MinecraftForge.EVENT_BUS.register(this);
     }
 
     @Override
