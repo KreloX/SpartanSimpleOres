@@ -1,5 +1,6 @@
 package krelox.spartansimpleores;
 
+import com.oblivioussp.spartanweaponry.api.trait.WeaponTrait;
 import krelox.spartantoolkit.SpartanAddon;
 import krelox.spartantoolkit.SpartanMaterial;
 import krelox.spartantoolkit.WeaponMap;
@@ -11,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
 import java.util.Map;
@@ -22,7 +24,12 @@ public class SpartanSimpleOres extends SpartanAddon {
 
     public static final WeaponMap WEAPONS = new WeaponMap();
     public static final DeferredRegister<Item> ITEMS = itemRegister(MODID);
+    public static final DeferredRegister<WeaponTrait> TRAITS = traitRegister(MODID);
 
+    // Traits
+    public static final RegistryObject<WeaponTrait> FLAME = registerTrait(TRAITS, new FlameTrait());
+
+    // Materials
     public static final SpartanMaterial MYTHRIL = new SpartanMaterial("mythril", MODID, SimpleOresTiers.MYTHRIL, TagUtils.forgeTag("ingots/mythril"), Set.of(), Map.of());
     public static final SpartanMaterial ADAMANTIUM = new SpartanMaterial("adamantium", MODID, SimpleOresTiers.ADAMANTIUM, TagUtils.forgeTag("ingots/adamantium"), Set.of(), Map.of());
     public static final SpartanMaterial ONYX = new SpartanMaterial("onyx", MODID, SimpleOresTiers.ONYX, TagUtils.forgeTag("gems/onyx"), Set.of(), Map.of());
@@ -34,6 +41,12 @@ public class SpartanSimpleOres extends SpartanAddon {
 
         registerSpartanWeapons(ITEMS);
         ITEMS.register(bus);
+        TRAITS.register(bus);
+    }
+
+    @Override
+    protected Map<RegistryObject<WeaponTrait>, String> getTraitDescriptions() {
+        return Map.of(FLAME, "Fires burning projectiles");
     }
 
     @Override

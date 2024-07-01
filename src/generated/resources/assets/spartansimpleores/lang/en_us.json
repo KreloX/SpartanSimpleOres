@@ -71,5 +71,7 @@
   "item.spartansimpleores.onyx_throwing_knife": "Onyx Throwing Knife",
   "item.spartansimpleores.onyx_tomahawk": "Onyx Tomahawk",
   "item.spartansimpleores.onyx_warhammer": "Onyx Warhammer",
-  "itemGroup.spartansimpleores": "Spartan Weaponry: SimpleOres"
+  "itemGroup.spartansimpleores": "Spartan Weaponry: SimpleOres",
+  "tooltip.spartansimpleores.trait.flame": "Flame",
+  "tooltip.spartansimpleores.trait.flame.desc": "Fires burning projectiles"
 }
