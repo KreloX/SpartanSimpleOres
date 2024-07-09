@@ -157,6 +157,7 @@ dependencies {
 
     implementation fg.deobf("maven.modrinth:simpleores:${minecraft_version}-${simpleores_version}")
     implementation fg.deobf("maven.modrinth:simplecore-api:${minecraft_version}-${simplecorelib_version}")
+    runtimeOnly fg.deobf("maven.modrinth:bucketlib:${minecraft_version}-${bucketlib_version}")
 }
 
 tasks.withType(ProcessResources).configureEach {
@@ -164,8 +165,9 @@ tasks.withType(ProcessResources).configureEach {
             minecraft_version       : minecraft_version, minecraft_version_range: minecraft_version_range,
             forge_version           : forge_version, forge_version_range: forge_version_range,
             loader_version_range    : loader_version_range,
-            spartan_weaponry_version: spartan_weaponry_version, spartan_toolkit_version: spartan_toolkit_version,
-            simpleores_version      : simpleores_version, simplecorelib_version: simplecorelib_version,
+            spartan_weaponry_version: spartan_weaponry_version,
+            spartan_toolkit_version : spartan_toolkit_version, spartan_toolkit_limit: spartan_toolkit_limit,
+            simpleores_version      : simpleores_version, simplecorelib_version: simplecorelib_version, bucketlib_version: bucketlib_version,
             mod_id                  : mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
             mod_issue_tracker       : mod_issue_tracker, mod_homepage: mod_homepage, mod_credits: mod_credits,
             mod_authors             : mod_authors, mod_description: mod_description, pack_format_number: pack_format_number,
