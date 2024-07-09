@@ -1,31 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "spartanweaponry:type_disabled",
+      "disabled": [
+        "lance"
+      ]
+    }
+  ],
   "group": "spartanweaponry:lance",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/adamantium"
+    },
+    "/": {
+      "item": "spartanweaponry:pole"
+    },
+    "|": {
+      "item": "spartanweaponry:handle"
+    }
+  },
   "pattern": [
     "  #",
     "#/ ",
     "|# "
   ],
-  "key": {
-    "#": {
-      "tag": "forge:ingots/adamantium"
-    },
-    "|": {
-      "item": "spartanweaponry:handle"
-    },
-    "/": {
-      "item": "spartanweaponry:pole"
-    }
-  },
   "result": {
     "item": "spartansimpleores:adamantium_lance"
-  },
-  "conditions": [
-    {
-      "disabled": [
-        "lance"
-      ],
-      "type": "spartanweaponry:type_disabled"
-    }
-  ]
+  }
 }

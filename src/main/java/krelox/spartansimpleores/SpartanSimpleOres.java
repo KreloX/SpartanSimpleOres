@@ -1,5 +1,7 @@
 package krelox.spartansimpleores;
 
+import com.oblivioussp.spartanweaponry.api.WeaponMaterial;
+import com.oblivioussp.spartanweaponry.api.trait.RangedCallbackWeaponTrait;
 import com.oblivioussp.spartanweaponry.api.trait.WeaponTrait;
 import krelox.spartantoolkit.SpartanAddon;
 import krelox.spartantoolkit.SpartanMaterial;
@@ -7,6 +9,7 @@ import krelox.spartantoolkit.WeaponMap;
 import krelox.spartantoolkit.WeaponType;
 import mod.alexndr.simplecorelib.api.helpers.TagUtils;
 import mod.alexndr.simpleores.content.SimpleOresTiers;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.common.Mod;
@@ -27,7 +30,12 @@ public class SpartanSimpleOres extends SpartanAddon {
     public static final DeferredRegister<WeaponTrait> TRAITS = traitRegister(MODID);
 
     // Traits
-    public static final RegistryObject<WeaponTrait> FLAME = registerTrait(TRAITS, new FlameTrait());
+    public static final RegistryObject<WeaponTrait> FLAME = registerTrait(TRAITS, new RangedCallbackWeaponTrait("flame", SpartanSimpleOres.MODID, WeaponTrait.TraitQuality.POSITIVE) {
+        @Override
+        public void onProjectileSpawn(WeaponMaterial material, AbstractArrow projectile) {
+            projectile.setSecondsOnFire(100);
+        }
+    }.setRanged());
 
     // Materials
     public static final SpartanMaterial MYTHRIL = new SpartanMaterial("mythril", MODID, SimpleOresTiers.MYTHRIL, TagUtils.forgeTag("ingots/mythril"), Set.of(), Map.of());
@@ -46,7 +54,7 @@ public class SpartanSimpleOres extends SpartanAddon {
 
     @Override
     protected Map<RegistryObject<WeaponTrait>, String> getTraitDescriptions() {
-        return Map.of(FLAME, "Fires burning projectiles");
+        return Map.of(FLAME, "Shoots burning projectiles");
     }
 
     @Override
