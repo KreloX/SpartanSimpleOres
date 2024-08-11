@@ -8,14 +8,12 @@ import mod.alexndr.simpleores.content.SimpleOresTiers;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
-import java.util.Map;
 
 @Mod(SpartanSimpleOres.MODID)
 public class SpartanSimpleOres extends SpartanAddon {
@@ -29,13 +27,13 @@ public class SpartanSimpleOres extends SpartanAddon {
     // Traits
     public static final RegistryObject<WeaponTrait> FLAME = registerTrait(TRAITS, new BetterWeaponTrait("flame", SpartanSimpleOres.MODID, WeaponTrait.TraitQuality.POSITIVE) {
         @Override
-        public void onProjectileSpawn(WeaponMaterial material, AbstractArrow projectile) {
-            projectile.setSecondsOnFire(100);
+        public String getDescription() {
+            return "Shoots burning projectiles";
         }
 
         @Override
-        public boolean isEnabled(WeaponMaterial material, ItemStack stack) {
-            return super.isEnabled(material, stack) && ((WeaponItem) stack.getItem()).isRanged();
+        public void onProjectileSpawn(WeaponMaterial material, AbstractArrow projectile) {
+            projectile.setSecondsOnFire(100);
         }
     }.setRanged());
 
@@ -56,11 +54,6 @@ public class SpartanSimpleOres extends SpartanAddon {
         ITEMS.register(bus);
         TRAITS.register(bus);
         TABS.register(bus);
-    }
-
-    @Override
-    protected Map<RegistryObject<WeaponTrait>, String> getTraitDescriptions() {
-        return Map.of(FLAME, "Shoots burning projectiles");
     }
 
     @Override
